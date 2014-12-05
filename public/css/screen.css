@@ -67,61 +67,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 12, ../../compass/sass/screen.scss */
-body {
-  font-size: 1em;
-}
-
-/* line 16, ../../compass/sass/screen.scss */
+/* line 9, ../../compass/sass/screen.scss */
 header {
-  padding: 1em 0;
-  background-color: lightgrey;
+  background-color: #c4c4df;
+  text-align: center;
+  padding: 20px 0;
 }
-/* line 20, ../../compass/sass/screen.scss */
-header .menu-full {
+/* line 15, ../../compass/sass/screen.scss */
+header .spaSwitch {
   display: inline-block;
 }
-/* line 23, ../../compass/sass/screen.scss */
-header .menu-full li {
-  font-weight: bold;
-  font-size: 1em;
-  float: left;
-  margin: 0 1.2em;
+/* line 19, ../../compass/sass/screen.scss */
+header .spaSwitch .leftSpace {
+  display: inline-block;
+  width: 22px;
 }
-@media screen and (min-width: 481px) and (max-width: 700px) {
-  /* line 23, ../../compass/sass/screen.scss */
-  header .menu-full li {
-    font-size: 1.2em;
-  }
-}
-@media (min-width: 701px) {
-  /* line 23, ../../compass/sass/screen.scss */
-  header .menu-full li {
-    font-size: 1.5em;
-  }
+/* line 24, ../../compass/sass/screen.scss */
+header .spaSwitch button {
+  background-color: #a84040;
+  border-color: #a84040;
+  color: #FFFFFF;
+  border-radius: 14px;
+  border: 1px solid transparent;
+  font-size: 1.1em;
+  padding: 0.4em;
+  cursor: pointer;
+  vertical-align: middle;
+  margin: 0 7px;
 }
 /* line 39, ../../compass/sass/screen.scss */
-header .menu-icon {
-  display: none;
-}
-@media (max-width: 480px) {
-  /* line 44, ../../compass/sass/screen.scss */
-  header .menu-full {
-    display: none;
-  }
-  /* line 48, ../../compass/sass/screen.scss */
-  header .menu-icon {
-    display: inline;
-  }
-}
-
-/* line 54, ../../compass/sass/screen.scss */
-.floating-menu {
-  display: none;
-}
-@media (max-width: 480px) {
-  /* line 54, ../../compass/sass/screen.scss */
-  .floating-menu {
-    display: inline-block;
-  }
+header .spaSwitch img {
+  vertical-align: middle;
+  cursor: pointer;
 }

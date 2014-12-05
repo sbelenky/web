@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Change this alias for your environment!
+RewriteBase /your_alias/
+
+RewriteRule ^blog/(.+)$ display.php?name=$1
+
+

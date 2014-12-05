@@ -4,58 +4,43 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
-
-$small: "(max-width: 480px)";
-$medium: "screen and (min-width : 481px) and (max-width : 700px)";
-$large: "(min-width: 701px)";
-
-body {
-	font-size: 1em;
-}
+// @import "compass/helpers";
 
 header {
-	padding: 1em 0;
-	background-color: lightgrey;
 
-	.menu-full {
+	background-color: #c4c4df;
+	text-align: center;
+	padding: 20px 0;
+
+	.spaSwitch {
+
 		display: inline-block;
 
-		li {
-			font-weight: bold;
-			font-size: 1em;
-			float: left;
-			margin: 0 1.2em;
-
-			@media #{$medium} {
-				font-size: 1.2em;
-			}
-
-			@media #{$large} {
-				font-size: 1.5em;
-			}
-		}
-	}
-
-	.menu-icon {
-		display: none;
-	}
-
-	@media #{$small} {
-		.menu-full {
-			display: none;
+		.leftSpace {
+			display: inline-block;
+			width: image-width("question-circle.png");
 		}
 
-		.menu-icon {
-			display: inline;
+		button {
+			$button-color: #a84040;
+
+			background-color: $button-color;
+			border-color: $button-color;
+			color: #FFFFFF;
+			border-radius: 14px;
+			border: 1px solid transparent;
+			font-size: 1.1em;
+			padding: 0.4em;
+			cursor: pointer;
+			vertical-align: middle;
+			margin: 0 7px;
 		}
-	} 
-}
 
-.floating-menu {
-	display: none;
+		img {
+			vertical-align: middle;
+			cursor: pointer;
+		}
 
-	@media #{$small} {
-		display: inline-block;
 	}
 }
 
